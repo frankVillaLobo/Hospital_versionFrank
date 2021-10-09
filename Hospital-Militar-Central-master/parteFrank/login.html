@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Log in</title> 
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilosLogin.css">
+    <link rel="stylesheet" href="./css/main.css" />
+    
+</head>  
+<body>
+    <nav class="navbar">
+        <div class="nav-center">
+            <div class="nav-logo">
+                <a href="index.html" class="link-logo">
+                    <img src="./img/logo.jpg" alt="Logo" class="logo" alt="Logo Clinica">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">inicio</a>
+                <a href="index.html" class="nav-link">noticias</a>
+                <a href="index.html" class="nav-link">servicios</a>
+                <a href="index.html" class="nav-link">usuarios</a>
+                <a href="index.html" class="nav-link">Programas</a>
+                <!--faltan agregar mas opciones-->
+            </div>
+            <!--Botones de Inicio Sesion y registro-->
+            <div class="user-link">
+                <a href="login.html" class="btn">iniciar sesion</a>
+                <a href="registrar.html" class="btn">Registrarse</a>
+                <a href="busqueda.html" class="btn">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <form class="formulario-login">
+    
+    <h1>Inicio de Sesión</h1>
+    <div class="contenedor">   
+        
+        <div class="input-contenedor">
+        <i class="fas fa-envelope icon"></i>
+        <input type="text" placeholder="Cédula">
+        </div>
+        
+        <div class="input-contenedor">
+        <i class="fas fa-key icon"></i>
+        <input type="password" placeholder="Contraseña">
+        </div>
+
+        <div class="input">
+            <legend>Tipo de Usuario:</legend>
+            <label>
+                <input type="radio" name="TipoUs" value="Paciente"> Paciente&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="TipoUs" value="Medico"> Médico&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="TipoUs" value="Super-Administrador"> Super-Administrador
+            </label> 
+        </div><br>
+
+        <input type="submit" value="Login" class="button">
+        <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+        <p>¿No tienes una cuenta?<a class="link" href="registrar.html">Registrate </a></p>
+        <p>¿Olvidaste la contraseña?<a class="link" href="registrar.html">Restaurar contraseña</a></p>
+    </div>
+    </form>
+    <footer class="page-footer">
+        <p>
+          &copy; <span id=date></span><span class="footer-logo">Logo</span> Build by <a href="grupo38.com">Pagina Creador</a>
+        </p>
+      </footer>
+</body>
+</html>

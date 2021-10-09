@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Militar</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-center">
+            <div class="nav-logo">
+                <a href="index.html" class="link-logo">
+                    <img src="./img/logo.jpg" alt="Logo" class="logo" alt="Logo Clinica">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">inicio</a>
+                <a href="index.html" class="nav-link">noticias</a>
+                <a href="index.html" class="nav-link">servicios</a>
+                <a href="index.html" class="nav-link">usuarios</a>
+                <a href="index.html" class="nav-link">Programas</a>
+                <!--faltan agregar mas opciones-->
+            </div>
+            <!--Botones de Inicio Sesion y registro-->
+            <div class="user-link">
+                <a href="login.html" class="btn">iniciar sesion</a>
+                <a href="registrar.html" class="btn">Registro</a>
+                <a href="busqueda.html" class="btn">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!--Main Page-->
+    <main>
+        <header class="main-header">
+            <h1>¿Como podemos ayudarte?</h1>
+        </header>
+        <div class="page-window">
+            <div class="search-bar">
+                <input id="busqueda" type="text" placeholder="busqueda">
+                <a id="search-b" class="btn" onclick="realizarBusqueda()">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+            <div id="respuesta" class="page-results">
+                <div class="no-results">
+                    <div class="agendaCita">
+                        <h1>Agenda tu cita</h1>
+                        <i class="far fa-calendar-plus""></i>
+                        <hr>
+                    </div>
+                    <div class="central-line"></div>
+                    <div class="preguntasFrecuentes">
+                        <h1>Preguntas Frecuentes</h1>
+                        <i class="fas fa-question"></i>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/busqueda.js"></script>
+</body>
+
+<!--Footer-->
+<footer class="page-footer">
+    <p>
+        &copy; <span id=date></span><span class="footer-logo">Logo</span> Build by <a href="grupo38.com">Pagina
+            Creador</a>
+    </p>
+</footer>
+
+</html>

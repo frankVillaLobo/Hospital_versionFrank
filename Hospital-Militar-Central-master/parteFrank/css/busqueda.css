@@ -1,0 +1,76 @@
+/*
+Parte de la cabecera
+*/
+*{
+    font-family: Arial;
+}
+.barraBusqueda__img{
+    display: inline;
+    background:transparent;
+    vertical-align:middle;
+}
+.barraBusqueda__h1{
+    display: inline;
+    vertical-align:middle;
+    
+}
+
+.inputprueba{
+    display: inline;
+    color:rgb(255, 255, 255);
+    background-color:rgb(22, 153, 230);
+    float: right;
+    clear: both;
+    padding: 14px 10vw; 
+    line-height: 1;
+}
+.barraBusqueda{
+    background-color:rgb(117, 194, 238);
+    align-items: center;
+    line-height: 20px;
+
+}
+
+.barraBusqueda__inputSearch{
+    display: inline;
+    color:rgb(255, 255, 255);
+    background-color:rgb(22, 153, 230);
+    float: right;
+    clear: both;
+    padding: 14px 10vw; 
+    line-height: 1;
+}
+
+.barraBusqueda__inputSearch::placeholder{
+    color:rgb(255, 255, 255);
+    font-size:25px;
+    float: left;
+    clear:none;
+}
+
+/*
+Noticias
+*/
+.resultadosBusqueda:first-child{
+    margin-top: 30px;
+}
+.resultadosBusqueda{
+    background-color:rgb(162, 211, 240);
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.resultadosBusqueda__h2{
+    margin-left: 20px;
+}
+
+.resultadosBusqueda__p{
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}

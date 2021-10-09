@@ -1,0 +1,96 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #9e9797;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+.contenedor 
+{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 2000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1{
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+}
+
+select{
+    align-items: center;
+    text-decoration: none;
+    color:  #999;
+    font-size: 120%;
+}
+
+.input{
+    color: #1a2537;
+    font-size: 120%;
+}
+
+.titulo
+{
+    color: var(--color-primary);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.formulario-login{
+    position: absolute;
+    left:15%;
+    background: #fff;
+
+/* footer */
+
+footer
+{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}

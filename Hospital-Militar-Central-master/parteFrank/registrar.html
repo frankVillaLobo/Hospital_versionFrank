@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilosLogin.css">
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <div class="nofooter">
+        <nav class="navbar">
+            <div class="nav-center">
+                <div class="nav-logo">
+                    <a href="index.html" class="link-logo">
+                        <img src="./img/logo.jpg" alt="Logo" class="logo" alt="Logo Clinica">
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">inicio</a>
+                    <a href="index.html" class="nav-link">noticias</a>
+                    <a href="index.html" class="nav-link">servicios</a>
+                    <a href="index.html" class="nav-link">usuarios</a>
+                    <a href="index.html" class="nav-link">Programas</a>
+                    <!--faltan agregar mas opciones-->
+                </div>
+                <!--Botones de Inicio Sesion y registro-->
+                <div class="user-link">
+                    <a href="login.html" class="btn">iniciar sesion</a>
+                    <a href="registrar.html" class="btn">Registro</a>
+                    <a href="busqueda.html" class="btn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <form class="formulario-registro">
+
+            <h1>Registro</h1>
+
+            <li>El registro le permite obtener más información sobre &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nuestros eventos.
+            </li>
+            <li>El registro es GRATUITO.</li>
+            <li>Su usuario y contraseña serán enviados al correo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;suministrado.</li>
+            <li>Todos los campos son obligatorios.</li>
+
+            <div class="contenedor">
+
+                <div class="input-contenedor">
+                    <i class="fas fa-user icon"></i>
+                    <input type="text" placeholder="Nombres">
+                </div>
+
+                <div class="input-contenedor">
+                    <i class="fas fa-user icon"></i>
+                    <input type="text" placeholder="Apellidos">
+                </div>
+
+                <div class="input">
+                    Sexo:&nbsp;&nbsp;&nbsp;&nbsp;<select>
+                        <option value=Ninguno>--Sexo--
+                        <option value=Femenino>Femenino
+                        <option value=Masculino>Masculino
+                    </select>
+                </div><br>
+
+                <div class="input">
+                    <legend>Tipo de Documento:</legend>
+                    <label>
+                        <input type="radio" name="TipoId" value="RC"> Registro Civil
+                        <input type="radio" name="TipoId" value="TI"> T.I
+                        <input type="radio" name="TipoId" value="CC"> C.C
+                        <input type="radio" name="TipoId" value="Pasaporte"> Pasaporte
+                    </label>
+                </div><br>
+
+                <div class="input-contenedor">
+                    <i class="fas fa-file-alt icon"></i>
+                    <input type="text" placeholder="Número de Identificación">
+                </div>
+
+                <div class="input-contenedor">
+                    <i class="fas fa-home icon"></i>
+                    <input type="text" placeholder="Dirección">
+                </div>
+
+                <div class="input-contenedor">
+                    <i class="fas fa-phone icon"></i>
+                    <input type="text" placeholder="Teléfono">
+                </div>
+
+                <div class="input-contenedor">
+                    <i class="fas fa-envelope icon"></i>
+                    <input type="text" placeholder="Correo Electronico">
+                </div>
+
+                <div class="input-contenedor">
+                    <i class="fas fa-key icon"></i>
+                    <input type="password" placeholder="Contraseña">
+                </div>
+
+                <div class="input-contenedor">
+                    <i class="fas fa-key icon"></i>
+                    <input type="password" placeholder="Confirmar Contraseña">
+                </div>
+
+                <input type="submit" value="Registrate" class="button">
+                <p><input type="checkbox" name="condiciones" />Al registrarte, aceptas nuestras Condiciones de uso y
+                    Política de privacidad.</p>
+                <p a>¿Ya estas registado?&nbsp;&nbsp;&nbsp;&nbsp;<a class="link" href="login.html">Iniciar Sesion</a>
+                </p>
+            </div>
+        </form>
+    </div>
+    <footer class="page-footer">
+        <p>
+            &copy; <span id=date></span><span class="footer-logo">Logo</span> Build by <a href="grupo38.com">Pagina
+                Creador</a>
+        </p>
+    </footer>
+</body>
+</html>
