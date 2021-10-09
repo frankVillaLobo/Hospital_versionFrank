@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    background: url(img_login_paciente.jpg);
+    background: url(../img/img_login_paciente.jpg);
     background-repeat:no-repeat;
     /*background-attachment: fixed;*/
     background-size:120%;

@@ -104,7 +104,7 @@ function validarLogin(){
     }
 
     if (opcion.checked == true){
-        window.open("/inicio/IniciarSesion/Paciente");
+        window.open("/inicio/iniciarSesion/paciente");
     }
     else{
         alert("Debes aceptar nuestras politicas de privacidad")
