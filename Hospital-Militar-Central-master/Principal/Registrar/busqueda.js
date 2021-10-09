@@ -23,7 +23,7 @@ let noticia1HTML = `<div class="result">
         para ordenar el ranking.<a href="notiica.html">[Ver mas]</a></p>
 </div>
 <div class="result-img">
-    <img src="{{url_for('static', filename = '../img/noticia.jpg')}}" alt="Image">
+    <img src="{{url_for('static', filename = '/img_registrar/noticia.jpg')}}" alt="Image">
 </div>
 </div>`;
 
@@ -34,7 +34,7 @@ let noticia2HTML = `<div class="result">
     <p>Entre los temas que se tratarán en este espacio académico están: Ética de la investigación en seres humanos, Fundamento legal BPC, ¿Existen los biobancos? ¿Qué hay en ellos?, Bioética en modelos animales, consentimiento informado, manejo ético en bases de datos, ¿Qué es la necroética en investigación? e investigación en Pediatría, entre otros.<a href="notiica.html">[Ver mas]</a></p>
 </div>
 <div class="result-img">
-    <img src="{{url_for('static', filename = '../img/noticia2.jpg')}}" alt="Image">
+    <img src="{{url_for('static', filename = '/img_registrar/noticia2.jpg')}}" alt="Image">
 </div>
 </div>`;
 
@@ -45,7 +45,7 @@ let noticia3HTML = `<div class="result">
     <p>Las clínicas son grupos de varios profesionales que trabajan articuladamente para mejorar la calidad de vida, disminuir las complicaciones y optimizar los recursos de atención para los pacientes adultos usuarios del Subsistema de Salud de las Fuerzas Militares con diagnóstico de enfermedades crónicas.Los pacientes para el ingreso a las clínicas deben ser remitidos de su sitio de atención primaria (Dispensarios), algunos serán valorados y retornarán a su dispensario y otros permanecerán en las clínicas hasta la estabilización y control de su patología. En las clínicas se cuenta con la atención de un médico especialista y/o supra especialista, una enfermera jefa y una nutricionista. Es posible contar con otros profesionales como terapistas, psicólogos según las necesidades de los pacientes.<a href="notiica.html">[Ver mas]</a></p>
 </div>
 <div class="result-img">
-    <img src="{{url_for('static', filename = '../img/noticia3.jpg')}}" alt="Image">
+    <img src="{{url_for('static', filename = '/img_registrar/noticia3.jpg')}}" alt="Image">
 </div>
 </div>`;
 let noticiasHTML = [noticia1HTML,noticia2HTML,noticia3HTML];

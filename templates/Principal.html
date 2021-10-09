@@ -17,7 +17,7 @@
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <!-- conexion a css -->
-    <link rel="stylesheet" href="{{url_for('static', filename = 'estilos.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = '../static/css/estilos.css')}}">
 
 </head>
 <body>
@@ -25,8 +25,8 @@
     <header>
         <nav>
             <a href="/inicio" class="nav-link">Inicio</a>
-            <a href="/inicio/Registro" class="btn">Registrar</a>
-            <a href="/inicio/IniciarSesion" class="btn">Iniciar Sesíon</a>
+            <a href="/inicio/registro" class="btn">Registrar</a>
+            <a href="/inicio/iniciarSesion" class="btn">Iniciar Sesíon</a>
             <a href="index.html" class="nav-link">Servicios</a>
             <a href="index.html" class="nav-link">Contacto</a>
             <a href="/inicio/busqueda" class="btn">
