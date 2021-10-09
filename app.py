@@ -3,6 +3,12 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+
+@app.route("/")
+def inicio():
+    return render_template("Principal.html")
+
+
 @app.route("/inicio")
 def principal():
     return render_template("Principal.html")
@@ -22,3 +28,19 @@ def busqueda():
 @app.route("/inicio/iniciarSesion/paciente")
 def iniciarSesionPaciente():
     return render_template("principalPaciente.html")
+
+@app.route("/inicio/iniciarSesion/dashboard")
+def dashboard():
+    return render_template("dashboard.html")
+
+@app.route("/inicio/iniciarSesion/dashboard/paciente")
+def dashboardPaciente():
+    return render_template("dashboardPaciente.html")
+
+@app.route("/inicio/iniciarSesion/dashboard/medico")
+def dashboardMedico():
+    return render_template("dasboardMedico.html")
+
+@app.route("/inicio/iniciarSesion/dashboard/citas")
+def dashboardCitas():
+    return render_template("dasboardCitas.html")

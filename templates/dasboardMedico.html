@@ -19,7 +19,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     <!-- conexion a css -->
-    <link rel="stylesheet" href="./static/css/dashboardmedico.css">
+    <link rel="stylesheet" href="{{url_for('static', filename = '../static/css/dashboardMedico.css')}}">
+    <link rel="icon" href="{{url_for('static', filename = 'img/favicon.png')}}">
 
 </head>
 
@@ -29,8 +30,8 @@
 
     <!-- inicio y señal de busqueda -->
         <nav>
-            <a href="../principal/index.html" class="btn">Inicio</a>
-            <a href="../Buscar/busquedaf.html" class="btn">
+            <a href="/inicio" class="btn">Inicio</a>
+            <a href="/inicio/busqueda" class="btn">
                 <i class="fas fa-search"></i>
             </a>
         </nav>
@@ -77,9 +78,10 @@
         
 
 
-                <input type="submit" value="Nuevo" class="button1">
-                <input type="submit" value="Buscar" class="button2">
-
+                
+                <input type="submit" value="Buscar" class="button1">
+                <input type="submit" value="Nuevo" class="button2">
+                
             </div>
         </form>
     
@@ -91,12 +93,8 @@
                 <div class="tools">
                     <!-- boton check -->
                     <ul>
-                        <li><span><input type="checkbox"></span></li>
-                        <li>
-                            <button>
-                                <i class="material-icons">add_circle</i>
-                            </button>
-                        </li>
+                        
+                        
                         <!-- boton editar -->
                         <li>
                             <button>
@@ -112,7 +110,7 @@
                         <!-- boton compartir -->
                         <li>
                             <button>
-                                <i class="material-icons">share</i>
+                                <i >Ver Citas</i>
                             </button>
                         </li>
                     </ul>
@@ -126,48 +124,45 @@
                 <table class="datatable">
                     <thead> 
                         <tr>
-                            <th></th>
-                            <th>Id Cita</th>
+                            <th><span><input type="checkbox"></span></th>
+                            <th>Identificación</th>
                             <th>Nombre del medico</th>
-                            <th>Nombre del Paciente</th>
                             <th>Especialidad</th>
                             <th>Consultorio</th>
                             <th>Edad</th>
+                            
                         </tr>
                     </thead>
 
                     <tbody>
                         <tr>
                             <td class="table-checkbox"> <input type="checkbox" name="" id=""></td>
-                            <td><span class="available"></span></td>
-                            <td>1234</td>
+                            
+                            <td>1234564789</td>
                             <td>Rafael Sevilla</td>
-                            <td>Sevilla Rafael</td>
                             <td>General</td>
                             <td>c19</td>
                             <td>28</td>
+                            
                         </tr>
 
                         <tr>
                             <td class="table-checkbox"> <input type="checkbox" name="" id=""></td>
-                            <td><span class="away"></span></td>
-                            <td>1234</td>
-                            <td>Rafael Sevilla</td>
-                            <td>Sevilla Rafael</td>
-                            <td>General</td>
-                            <td>c19</td>
-                            <td>28</td>
+                            <td>17528954</td>
+                            <td>Maria Sevilla</td>
+                            <td>Pediatria</td>
+                            <td>c20</td>
+                            <td>35</td>
+                           
                         </tr>  
 
                         <tr>
                             <td class="table-checkbox"> <input type="checkbox" name="" id=""></td>
-                            <td><span class="offline"></span></td>
-                            <td>1234</td>
-                            <td>Rafael Sevilla</td>
-                            <td>Sevilla Rafael</td>
+                            <td>12347896</td>
+                            <td>Victoria De las Salas</td>
                             <td>General</td>
-                            <td>c19</td>
-                            <td>28</td>
+                            <td>c18</td>
+                            <td>50</td>
                         </tr>                     
                     </tbody>
                 </table>

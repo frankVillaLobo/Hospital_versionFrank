@@ -53,11 +53,10 @@ select{
     position: absolute;
     left:15%;
     background: #fff;
-
+}
 /* footer */
 
-footer
-{
+footer{
     background: #414141;
     padding: 60px 0 30px 0;
     margin: auto;
