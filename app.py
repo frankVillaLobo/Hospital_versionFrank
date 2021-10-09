@@ -8,7 +8,6 @@ app = Flask(__name__)
 def inicio():
     return render_template("Principal.html")
 
-
 @app.route("/inicio")
 def principal():
     return render_template("Principal.html")
@@ -44,3 +43,15 @@ def dashboardMedico():
 @app.route("/inicio/iniciarSesion/dashboard/citas")
 def dashboardCitas():
     return render_template("dasboardCitas.html")
+
+@app.route("/inicio/iniciarSesion/dashboard/hclinica")
+def dashboardHClinica():
+    return render_template("dashboardHistoriaClinica.html")
+
+@app.route("/inicio/iniciarSesion/dashboard/agenda")
+def dashboardAgenda():
+    return render_template("dashboardAgenda.html")
+
+@app.route("/inicio/iniciarSesion/dashboard/ayuda")
+def dashboardAyuda():
+    return render_template("dashboardAyuda.html")
