@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--Esta vista usa el mismo css que dashboardAgenda-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static', filename = '../static/css/agenda.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename = '../static/css/dashstyle.css')}}"
-
+    <link rel="stylesheet" href="{{url_for('static', filename = '../static/css/dashboardAgenda.css')}}"
     <title>Dash Agenda</title>
 </head>
 
@@ -128,120 +126,113 @@
 
             <ul class="admin-menu">
                 <li class="menu-heading">
-                    <h3>Dashhboard Administrativo</h3>
+                <h3>Dashhboard Administrativo</h3>
                 </li>
                 <li>
-                    <a href="#0">
-                        <svg>
-                            <use xlink:href="#pages"></use>
-                        </svg>
-                        <span>Dashboard</span>
-                    </a>
+                <a href="/inicio/iniciarSesion/dashboard">
+                    <svg>
+                    <use xlink:href="#pages"></use>
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
                 </li>
                 <li>
-                    <a href="#0">
-                        <svg>
-                            <use xlink:href="#users"></use>
-                        </svg>
-                        <span>Pacientes</span>
-                    </a>
+                <a href="/inicio/iniciarSesion/dashboard/paciente">
+                    <svg>
+                    <use xlink:href="#users"></use>
+                    </svg>
+                    <span>Pacientes</span>
+                </a>
                 </li>
                 <li>
-                    <a href="#0">
-                        <svg>
-                            <use xlink:href="#trends"></use>
-                        </svg>
-                        <span>Médicos</span>
-                    </a>
+                <a href="/inicio/iniciarSesion/dashboard/medico">
+                    <svg>
+                    <use xlink:href="#trends"></use>
+                    </svg>
+                    <span>Médicos</span>
+                </a>
                 </li>
                 <li>
-                    <a href="#0">
-                        <svg>
-                            <use xlink:href="#collection"></use>
-                        </svg>
-                        <span>Citas</span>
-                    </a>
+                <a href="/inicio/iniciarSesion/dashboard/citas">
+                    <svg>
+                    <use xlink:href="#collection"></use>
+                    </svg>
+                    <span>Citas</span>
+                </a>
                 </li>
                 <li>
-                    <a href="#0">
-                        <svg>
-                            <use xlink:href="#comments"></use>
-                        </svg>
-                        <span>Historias clínicas</span>
-                    </a>
+                <a href="#0">
+                    <svg>
+                    <use xlink:href="#comments"></use>
+                    </svg>
+                    <span>Historias clínicas</span>
+                </a>
                 </li>
                 <li>
-                    <a href="#0">
-                        <svg>
-                            <use xlink:href="#appearance"></use>
-                        </svg>
-                        <span>Reportes</span>
-                    </a>
+                <a href="#0">
+                    <svg>
+                    <use xlink:href="#appearance"></use>
+                    </svg>
+                    <span>Reportes</span>
+                </a>
                 </li>
                 <li>
-                    <a href="#0">
-                        <svg>
-                            <use xlink:href="#appearance"></use>
-                        </svg>
-                        <span>Reviews Médicos</span>
-                    </a>
+                <a href="#0">
+                    <svg>
+                    <use xlink:href="#appearance"></use>
+                    </svg>
+                    <span>Reviews Médicos</span>
+                </a>
                 </li>
                 <li>
-                    <a href="#0">
+                <a href="/inicio/iniciarSesion/dashboard/agenda">
                         <svg>
-                            <use xlink:href="#appearance"></use>
+                        <use xlink:href="#appearance"></use>
                         </svg>
                         <span>Agenda</span>
-                    </a>
+                </a>
                 </li>
-
+                               
                 <li class="menu-heading">
-                    <h3>Opciones</h3>
+                <h3>Opciones</h3>
                 </li>
                 <li>
-                    <a href="#0">
-                        <svg>
-                            <use xlink:href="#settings"></use>
-                        </svg>
-                        <span>Configuración</span>
-                    </a>
+                <a href="#0">
+                    <svg>
+                    <use xlink:href="#settings"></use>
+                    </svg>
+                    <span>Configuración</span>
+                </a>
                 </li>
                 <li>
-                    <a href="#0">
-                        <svg>
-                            <use xlink:href="#options"></use>
-                        </svg>
-                        <span>Ayuda</span>
-                    </a>
+                <a href=/inicio/iniciarSesion/dashboard/ayuda>
+                    <svg>
+                    <use xlink:href="#options"></use>
+                    </svg>
+                    <span>Ayuda</span>
+                </a>
                 </li>
                 <li>
-                    <div class="switch">
-                        <input type="checkbox" id="mode" checked>
-                        <label for="mode">
-                            <span></span>
-                            <span>Modo Oscuro</span>
-                        </label>
-                    </div>
-                    <button class="collapse-btn" aria-expanded="true" aria-label="collapse menu">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#collapse"></use>
-                        </svg>
-                        <span>Contraer</span>
-                    </button>
+                <div class="switch">
+                    <input type="checkbox" id="mode" checked>
+                    <label for="mode">
+                    <span></span>
+                    <span>Modo Oscuro</span>
+                    </label>
+                </div>
+                <button class="collapse-btn" aria-expanded="true" aria-label="collapse menu">
+                    <svg aria-hidden="true">
+                    <use xlink:href="#collapse"></use>
+                    </svg>
+                    <span>Contraer</span>
+                </button> 
                 </li>
             </ul>
         </nav>
     </header>
     <section class="page-content">
         <section class="search-and-user">
-            <form>
-                <input type="search" placeholder="Buscar...">
-                <button type="submit" aria-label="submit form">
-                    <svg aria-hidden="true">
-                        <use xlink:href="#search"></use>
-                    </svg>
-                </button>
-            </form>
+            <h1>Ayuda</h1>
             <div class="admin-profile" id="header">
                 <div id="userbar">
                     <div><span>Bienvenido!</span></div>
@@ -258,7 +249,6 @@
             </div>
 
         </section>
-        <section class="grid">
             <div class="page-ayuda">
                 <select class="preguntas" required>
                     <option value="" disabled selected hidden>Preguntas frecuentes</option>
@@ -275,7 +265,6 @@
                 <p>Comuniquese con nuestra mesa de ayuda al 316-3222222.</p> 
                 <p>Correo electronico: <a href="mailto:correo@gmail.com">mesaayuda@hospitalmilitar.gov.co</a></p>
             </div>
-        </section>
         <footer class="page-footer">
             <span>Desarrollado por G38Team5 </span>
             <a href="https://georgemartsoukos.com/" target="_blank">
