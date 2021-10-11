@@ -38,9 +38,9 @@ header {
     height: 100vh;
     background: #160766e3;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(246, 95%, 50%, 0.459), hsla(197, 74%, 50%, 0.664)), url(img/imagen.jpeg);
+    background: -webkit-linear-gradient(to right, hsla(246, 95%, 50%, 0.459), hsla(197, 74%, 50%, 0.664)), url(../img/imagen.jpeg);;
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(239, 53%, 60%, 0.459), hsla(236, 81%, 49%, 0.664)), url(img/imagen.jpeg);
+    background: linear-gradient(to right, hsla(239, 53%, 60%, 0.459), hsla(236, 81%, 49%, 0.664)), url(../img/imagen.jpeg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
