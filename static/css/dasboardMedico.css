@@ -154,6 +154,7 @@ body {
   font-size: 12px;
   margin-top: 12px;
   color: var(--page-header-headingColor);
+  
 }
 
 .page-header .admin-menu svg {
@@ -1053,3 +1054,27 @@ footer{
         font-size: 20px;
     }
 }}
+
+.main-title {
+  position: relative;
+  left: 5.5vw;
+}
+
+.date-input{
+  background: #ebebeb;
+  font-size:16px;
+  position: relative;
+  left:10px;
+  color:#414141;
+}
+
+.input-cedula::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 3;
+  color:#414141;
+}
+
+.opciones{
+  position: relative;
+  left:-170px;
+}
