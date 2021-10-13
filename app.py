@@ -94,3 +94,11 @@ def dashboardAgenda():
 @app.route("/inicio/iniciarSesion/dashboard/ayuda")
 def dashboardAyuda():
     return render_template("dashboardAyuda.html")
+
+@app.route("/inicio/iniciarSesion/medico")
+def perfilMedico():
+    return render_template("PrincipalMedico.html")
+
+@app.route("/inicio/iniciarSesion/medico/detalleCita")
+def detalleCita():
+    return render_template("detallecitamedico.html")
