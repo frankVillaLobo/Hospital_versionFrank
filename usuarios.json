@@ -1,0 +1,44 @@
+{
+    "usuarios": [
+        {
+            "tipo": "medico",
+            "cedula": "34567890",
+            "password": "09876543"
+        },
+        {
+            "tipo": "paciente",
+            "cedula": "12345678",
+            "password": "87654321"
+        },
+        {
+            "tipo": "superadministrador",
+            "cedula": "23456789",
+            "password": "98765432"
+        },
+        {
+            "tipo": "paciente",
+            "cedula": "67028405",
+            "password": "85236974"
+        },
+        {
+            "tipo": "paciente",
+            "cedula": "67028400",
+            "password": "12345678"
+        },
+        {
+            "tipo": "paciente",
+            "cedula": "67028401",
+            "password": "12345678"
+        },
+        {
+            "tipo": "paciente",
+            "cedula": "67028402",
+            "password": "12345678"
+        },
+        {
+            "tipo": "paciente",
+            "cedula": "67028403",
+            "password": "12345678"
+        }
+    ]
+}
