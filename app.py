@@ -64,3 +64,7 @@ def perfilMedico():
 @app.route("/inicio/iniciarSesion/medico/detalleCita")
 def detalleCita():
     return render_template("detallecitamedico.html")
+
+@app.route("/inicio/registroMedico")
+def registroMedico():
+    return render_template("registroMedico.html")

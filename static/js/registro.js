@@ -11,6 +11,8 @@ function validarRegistro() {
     var dir = document.formularioRegistro.direccion.value;
     var tel = document.formularioRegistro.telefono.value;
     var email = document.formularioRegistro.correo;
+    var especialidad = document.getElementById("especialidad");
+    var nconsultorio = document.formularioRegistro.nconsultorio;
     
     if(nombre == null || nombre.length < 2 || /^\s+$/.test(nombre)){
         alert("Se debe ingresar un nombre valido");
@@ -83,6 +85,16 @@ function validarRegistro() {
     else{
         alert("Debes aceptar nuestras politicas de privacidad")
         return false
+    }
+
+    if(especialidad.selectedIndex == null || especialidad.selectedIndex == 0){
+        alert ("Debes seleccionar una Especialidad");
+        return false;
+    }
+    var consultorio_len = nconsultorio.value.length;
+    if(consultorio_len < 0 || consultorio_len > 3 || isNaN(nconsultorio.value)){
+        alert("Se debe ingresar un número de Consultorio valido");
+        return false;
     }
     
 }
