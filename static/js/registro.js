@@ -80,7 +80,6 @@ function validarRegistro() {
     
     if (opcionr.checked == true){
         alert("tu registro ha sido exitoso")
-        window.open("/inicio/IniciarSesion")
     }
     else{
         alert("Debes aceptar nuestras politicas de privacidad")
@@ -114,12 +113,9 @@ function validarLogin(){
         alert("Se debe ingresar un password con mas de 8 carateres");
         return false;
     }
-    
-    if (opcion.checked == true){
-        window.open("/inicio/iniciarSesion/paciente");
-    }
-    else{
-        alert("Debes aceptar nuestras politicas de privacidad")
-        return false
+
+    if (opcion.checked == false){
+        alert("Debes aceptar nuestras politicas de privacidad");
+        return false;        
     }
 }

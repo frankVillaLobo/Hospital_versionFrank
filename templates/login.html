@@ -15,7 +15,7 @@
 </head>  
 <body>
     <form action=""
-    method = "GET" 
+    method = "POST" 
     name ="formularioLogin" 
     class ="formulario-login" 
     onsubmit = "return validarLogin()">
@@ -33,10 +33,10 @@
         <input type="password" name="password" placeholder="Contraseña">
         </div>
         
-        <p><input type="checkbox" name="condiciones" value = "aceptado" href = "Paciente/principalPaciente"/>Al iniciar sesión, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+        <p><input type="checkbox" name="condiciones" value = "aceptado"/>Al iniciar sesión, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
         <input type="submit" value="Iniciar Sesión" class="button">
-        <p>¿No tienes una cuenta?<a class="link" href="registrar.html">Registrate </a></p>
-        <p>¿Olvidaste la contraseña?<a class="link" href="registrar.html">Restaurar contraseña</a></p>
+        <p>¿No tienes una cuenta?<a class="link" href="/inicio/registro">Registrate </a></p>
+        <p>¿Olvidaste la contraseña?<a class="link" href="/inicio/registro">Restaurar contraseña</a></p>
     </div>
     </form>
     <script src = "{{ url_for('static', filename = '../static/js/registro.js') }}"></script> 
